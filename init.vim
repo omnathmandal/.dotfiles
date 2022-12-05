@@ -17,7 +17,7 @@ call plug#end()
 "++++++++++++PLUGINS END+++++++++++++++++++++++++++++++++
 
 "BASIC CONFIGURATION
-let mapleader = ","         " Mapping leader key to ','
+let mapleader = ";"         " Mapping leader key to ';'
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
 set ignorecase              " case insensitive 
@@ -29,7 +29,7 @@ set softtabstop=4           " see multiple spaces as tabstops so <BS> does the r
 set expandtab               " converts tabs to white space
 set shiftwidth=4            " width for autoindents
 set autoindent              " indent a new line the same amount as the line just typed
-set number	                " add line numbers
+set number                  " add line numbers
 set relativenumber          " add relative number
 set wildmode=longest,list   " get bash-like tab completions
 filetype plugin indent on   "allow auto-indenting depending on file type
