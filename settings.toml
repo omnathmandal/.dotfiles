@@ -1,0 +1,138 @@
+"git.ignoreMissingGitWarning" = true
+"editor.fontSize" = 20
+"editor.fontFamily" = "Fira Code"
+"terminal.integrated.shell.windows" = "C:\\WINDOWS\\System32\\cmd.exe"
+"explorer.confirmDelete" = false
+"files.autoSave" = "onFocusChange"
+"extensions.ignoreRecommendations" = true
+"editor.multiCursorModifier" = "ctrlCmd"
+"editor.suggestSelection" = "first"
+"vsintellicode.modify.editor.suggestSelection" = "automaticallyOverrodeDefaultValue"
+"python.jediEnabled" = false
+"liveServer.settings.donotShowInfoMsg" = true
+"git.ignoreWindowsGit27Warning" = true
+"python.languageServer" = "Jedi"
+"screencastMode.fontSize" = 25
+"kite.showWelcomeNotificationOnStartup" = false
+"workbench.startupEditor" = "newUntitledFile"
+"terminal.integrated.fontSize" = 20
+"code-runner.runInTerminal" = true
+"workbench.iconTheme" = "material-icon-theme"
+"terminal.integrated.defaultProfile.windows" = "Windows PowerShell"
+"vsicons.dontShowNewVersionMessage" = true
+"explorer.confirmDragAndDrop" = false
+"editor.cursorStyle" = "block"
+"workbench.productIconTheme" = "material-product-icons"
+"python.autoComplete.extraPaths" = [ ]
+"workbench.statusBar.visible" = false
+"workbench.colorTheme" = "One Dark Pro Darker"
+"oneDarkPro.vivid" = true
+"oneDarkPro.italic" = false
+"indentRainbow.indicatorStyle" = "light"
+"indentRainbow.lightIndicatorStyleLineWidth" = 2
+
+["files.exclude"]
+"**/.ipynb_checkpoints" = true
+"**/.vscode" = true
+"**/*.ini" = true
+
+["code-runner.executorMapByFileExtension"]
+".vb" = "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt"
+".vbs" = "cscript //Nologo"
+".scala" = "scala"
+".jl" = "julia"
+".cr" = "crystal"
+".ml" = "ocaml"
+".exs" = "elixir"
+".hx" = "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt"
+".rkt" = "racket"
+".scm" = "csi -script"
+".ahk" = "autohotkey"
+".au3" = "autoit3"
+".kt" = "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar"
+".kts" = "kotlinc -script"
+".dart" = "dart"
+".pas" = "cd $dir && fpc $fileName && $dir$fileNameWithoutExt"
+".pp" = "cd $dir && fpc $fileName && $dir$fileNameWithoutExt"
+".d" = "cd $dir && dmd $fileName && $dir$fileNameWithoutExt"
+".hs" = "runhaskell"
+".nim" = "nim compile --verbosity:0 --hints:off --run"
+".csproj" = "dotnet run --project"
+".fsproj" = "dotnet run --project"
+".lisp" = "sbcl --script"
+".kit" = "kitc --run"
+".v" = "v run"
+".vsh" = "v run"
+".sass" = "sass --style expanded"
+".cu" = "cd $dir && nvcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+
+["code-runner.executorMap"]
+javascript = "node"
+java = "cd $dir && javac $fileName && java $fileNameWithoutExt"
+c = "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+cpp = "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+objective-c = "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+php = "php"
+perl = "perl"
+perl6 = "perl6"
+ruby = "ruby"
+go = "go run"
+lua = "lua"
+groovy = "groovy"
+powershell = "powershell -ExecutionPolicy ByPass -File"
+bat = "cmd /c"
+shellscript = "bash"
+fsharp = "fsi"
+csharp = "scriptcs"
+vbscript = "cscript //Nologo"
+typescript = "ts-node"
+coffeescript = "coffee"
+scala = "scala"
+swift = "swift"
+julia = "julia"
+crystal = "crystal"
+ocaml = "ocaml"
+r = "Rscript"
+applescript = "osascript"
+clojure = "lein exec"
+haxe = "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt"
+rust = "cd $dir && rustc $fileName && $dir$fileNameWithoutExt"
+racket = "racket"
+scheme = "csi -script"
+ahk = "autohotkey"
+autoit = "autoit3"
+dart = "dart"
+pascal = "cd $dir && fpc $fileName && $dir$fileNameWithoutExt"
+d = "cd $dir && dmd $fileName && $dir$fileNameWithoutExt"
+haskell = "runhaskell"
+nim = "nim compile --verbosity:0 --hints:off --run"
+lisp = "sbcl --script"
+kit = "kitc --run"
+v = "v run"
+sass = "sass --style expanded"
+scss = "scss --style expanded"
+less = "cd $dir && lessc $fileName $fileNameWithoutExt.css"
+
+["terminal.integrated.profiles.windows".PowerShell]
+source = "PowerShell"
+icon = "terminal-powershell"
+
+["terminal.integrated.profiles.windows"."Command Prompt"]
+path = [
+  "${env:windir}\\Sysnative\\cmd.exe",
+  "${env:windir}\\System32\\cmd.exe"
+]
+args = [ ]
+icon = "terminal-cmd"
+
+["terminal.integrated.profiles.windows"."Git Bash"]
+source = "Git Bash"
+
+["terminal.integrated.profiles.windows"."Windows PowerShell"]
+path = "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+
+["[html]"]
+"editor.defaultFormatter" = "esbenp.prettier-vscode"
+
+["[markdown]"]
+"editor.defaultFormatter" = "yzhang.markdown-all-in-one"
