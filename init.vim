@@ -7,7 +7,9 @@ Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
+Plug 'folke/tokyonight.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'sheerun/vim-polyglot'
 " List ends here. Plugins become visible to Vim after this call.
 
 call plug#end()
@@ -15,6 +17,7 @@ call plug#end()
 "++++++++++++PLUGINS END+++++++++++++++++++++++++++++++++
 
 "BASIC CONFIGURATION
+let mapleader = ","         " Mapping leader key to ','
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
 set ignorecase              " case insensitive 
@@ -26,8 +29,8 @@ set softtabstop=4           " see multiple spaces as tabstops so <BS> does the r
 set expandtab               " converts tabs to white space
 set shiftwidth=4            " width for autoindents
 set autoindent              " indent a new line the same amount as the line just typed
-set number	            " add line numbers
-set relativenumber 
+set number	                " add line numbers
+set relativenumber          " add relative number
 set wildmode=longest,list   " get bash-like tab completions
 filetype plugin indent on   "allow auto-indenting depending on file type
 syntax on                   " syntax highlighting
@@ -37,9 +40,15 @@ filetype plugin on
 set ttyfast                 " Speed up scrolling in Vim
 set noswapfile
 
+" Disable arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
 "NERD TREE CONFIG
 " Toggle
-nnoremap <silent> <C-p> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 
 " open new split panes to right and below
 set splitright
