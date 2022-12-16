@@ -22,3 +22,9 @@ indent_style = tab
 trim_trailing_whitespace = false
 indent_style = space
 indent_size = 2
+
+# C and C++
+[*.{c,cpp}]
+indent_style = space
+indent_size = 4
+
