@@ -1,7 +1,6 @@
 " vim plug configuration
 call plug#begin()
 
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-pyright']
 Plug 'preservim/nerdcommenter'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
@@ -17,7 +16,7 @@ call plug#end()
 "++++++++++++PLUGINS END+++++++++++++++++++++++++++++++++
 
 "BASIC CONFIGURATION
-let mapleader = ";"         " Mapping leader key to ';'
+let mapleader = ","         " Mapping leader key to ','
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
 set ignorecase              " case insensitive 
@@ -28,7 +27,7 @@ set tabstop=4               " number of columns occupied by a tab
 set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
 set expandtab               " converts tabs to white space
 set shiftwidth=4            " width for autoindents
-set autoindent              " indent a new line the same amount as the line just typed
+set smartindent             " smart indent on 
 set number                  " add line numbers
 set relativenumber          " add relative number
 set wildmode=longest,list   " get bash-like tab completions
@@ -38,7 +37,23 @@ set mouse=a                 " enable mouse click
 set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set ttyfast                 " Speed up scrolling in Vim
-set noswapfile
+set noswapfile              " turning off swapfile
+set signcolumn=yes          " turning on signcolumn
+
+" terminal config 
+tnoremap <Esc> <C-\><C-n>
+tnoremap <A-h> <C-\><C-N><C-w>h
+tnoremap <A-j> <C-\><C-N><C-w>j
+tnoremap <A-k> <C-\><C-N><C-w>k
+tnoremap <A-l> <C-\><C-N><C-w>l
+inoremap <A-h> <C-\><C-N><C-w>h
+inoremap <A-j> <C-\><C-N><C-w>j
+inoremap <A-k> <C-\><C-N><C-w>k
+inoremap <A-l> <C-\><C-N><C-w>l
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
 
 " Disable arrow keys
 noremap <Up> <Nop>
@@ -217,4 +232,3 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-
