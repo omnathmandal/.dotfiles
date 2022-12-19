@@ -1,6 +1,5 @@
 # Directory structure
 
-<div align="center">
 
 ```text
 |   .gitignore
@@ -12,5 +11,4 @@
     \---nvim
             init.vim
 ```
-
-</div>
+-----
