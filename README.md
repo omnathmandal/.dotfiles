@@ -6,6 +6,9 @@
 |   settings.json
 |   .editorconfig
 |   Makefile
+|   README.md
+|   LICENSE.md
+|   init.vim
 |
 \---.config
     \---nvim
