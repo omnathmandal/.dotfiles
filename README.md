@@ -6,12 +6,15 @@
 |   settings.json
 |   .editorconfig
 |   Makefile
-|   README.md
 |   LICENSE.md
 |   init.vim
+|   README.md
+|   .vimrc
 |
 \---.config
     \---nvim
             init.vim
+
 ```
+
 -----
