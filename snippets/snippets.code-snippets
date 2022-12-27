@@ -1,0 +1,17 @@
+{
+	"cp-extension": {
+	  "prefix": ["base"],
+	  "body": ["/*\n* Author - GR33D\n*/\n",
+	  	"#include <iostream>",
+		"using namespace std;\n",
+		"int main()",
+		"{\n",
+		"\tint T;",
+		"\tcin >> T;",
+		"\twhile (T--)",
+		"\t{\n\t\t$0\n\t}",
+		"\treturn 0;\n}"	  
+	  ],
+	  "description": "Default cpp code for CP"
+	}
+}
