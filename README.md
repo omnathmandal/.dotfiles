@@ -5,16 +5,22 @@
 |   .gitignore
 |   settings.json
 |   .editorconfig
-|   Makefile
 |   LICENSE.md
 |   init.vim
-|   README.md
 |   .vimrc
+|   README.md
+|   Makefile
 |
-\---.config
-    \---nvim
-            init.vim
-
++---.config
+|   \---nvim
+|           init.vim
+|
++---snippets
+|       snippets.code-snippets
+|
+\---templates
+        template.cpp
+        template2.cpp
 ```
 
 -----
